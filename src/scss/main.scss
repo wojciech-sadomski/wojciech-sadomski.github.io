@@ -1,13 +1,70 @@
 @import "~normalize.css";
-
 @import "_variables";
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  color: black;
   display: flex;
+  flex-direction: column;
+  // background-color: greenyellow;
+  background-image: url(../assets/img/tlo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  // align-items: center;
+  // justify-content: center;
+  // min-height: 100vh;
+}
+.main {
+  display: flex;
+  // background-color: green;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 64px;
+  // background-color: greenyellow;
+  align-items: center;
+  &__globalFoto {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 10px solid rgba(47, 50, 255, 0.2);
+  }
+  &__text {
+    color: red;
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 0 0;
+    &--description {
+      font-size: 16px;
+      margin: 34px 10px 40px;
+    }
+    &--link {
+      font-size: 20px;
+      // font-family:
+      display: inline-block;
+      box-sizing: border-box;
+      color: khaki;
+      background-color: #4da8ff;
+      border-radius: 64px;
+      text-align: center;
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.sectionAbility {
+  height: 90%;
+  width: 100%;
+  background-color: #1070ca;
+}
+.sectionProjects {
 }
