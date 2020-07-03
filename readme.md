@@ -1,9 +1,8 @@
-![cover]()
+![Zdjęcie Wojciech Sadomski](git/)
 
 # Wojciech Sadomski
 
-Strona opisująca moje dotychczasowe doświadczenie
+## Czego się dowiesz na stronie
 
-## Czego się dowiesz?
-
-Na stronie opisuję posiadane przeze mnie umiejętności. Czego się już nauczyłem, co już potrafię co jest ajtualnie rozijane oraz
+Jestem inżynierem-konstruktorem z kilkunastoletnim stażem, aktualnie chciałbym zmienić branżę i rozpocząć dalszy rozwój w kierunku IT.
+Ten projekt pozwoli w przystępny sposób, pokazać, co już potrafię a co chciałbym jeszcze rozwinąć.
