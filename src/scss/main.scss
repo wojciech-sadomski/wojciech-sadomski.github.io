@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   // background-color: greenyellow;
-  background-image: url(../assets/img/tlo.jpg);
+  // background-image: url(../assets/img/tlo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -32,7 +32,7 @@ body {
   margin-top: 64px;
   // background-color: greenyellow;
   align-items: center;
-  &__globalFoto {
+  &__foto {
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -61,10 +61,23 @@ body {
     }
   }
 }
-.sectionAbility {
+.ability {
   height: 90%;
   width: 100%;
   background-color: #1070ca;
+  text-align: center;
 }
-.sectionProjects {
+.projects {
+  display: grid;
+
+  text-align: center;
+  &__grid {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    background-color: grey;
+    width: 90%;
+    border-radius: 20px;
+  }
 }

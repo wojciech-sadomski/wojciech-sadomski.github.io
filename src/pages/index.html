@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,11 +29,11 @@
     <main class="main">
       <section class="header">
         <img
-          class="header__globalFoto"
+          class="header__foto"
           alt="zdjęcie autora"
           src="../assets/img/my-foto.jpg"
         />
-        <!-- <div class="section__cloud"></div> -->
+        <span class="header__cloud"></span>
         <h1 class="header__text">
           Nazywam się Wojciech Sadomski i dąże to stania się Frontend
           Developerem
@@ -52,19 +52,61 @@
         >
         <!-- zdjęcie i chmurka-->
       </section>
-      <section class="sectionAbility">
-        <h2>Doświadczenie</h2>
+      <section class="ability">
+        <h2 class="ability__header">Doświadczenie</h2>
+        <article class="ability-section">
+          <span class="ability__section--emoji">💪</span>
+          <h3 class="ability__section__header">Umiem już nieźle</h3>
+          <ul class="ability__section__list">
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+            <li class="ability__section__list--element"></li>
+          </ul>
+        </article>
         <article class="sectionAbility">
-          <h2 class="sectionAbility__header">Umiem już nieźle</h2>
+          <h3 class="sectionAbility__header">Umiem już nieźle</h3>
+          <ul class="sectionAbility__header__list">
+            <li class="sectionAbility__header__list--element"></li>
+          </ul>
+        </article>
+        <article class="sectionAbility">
+          <h3 class="sectionAbility__header">Umiem już nieźle</h3>
           <ul class="sectionAbility__header__list">
             <li class="sectionAbility__header__list--element"></li>
           </ul>
         </article>
       </section>
-      <section class="sectionProjects">
-        <ul class="sectionProjects__list">
-          <li class="sectionProjects__list--element">Coś</li>
-        </ul>
+      <section class="projects">
+        <h2 class="projects__header">My projects</h2>
+        <p class="project__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          accusamus aut vel laborum beatae impedit quisquam reprehenderit fuga
+          ducimus assumenda sit amet sunt incidunt, quod omnis, cupiditate qui
+          id provident.
+        </p>
+        <div class="projects__grid">
+          <article>
+            <p><span>Project: </span><span>Demo</span></p>
+            <p>
+              <span>Descryption: </span
+              ><span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                sed suscipit aperiam laudantium nam nihil aut quaerat
+                dignissimos natus error. Excepturi non dolore deserunt veniam
+                eaque assumenda nostrum ducimus nam?</span
+              >
+            </p>
+            <p><span>Demo: </span><span>Link</span></p>
+            <p><span>Github: </span><span>Link</span></p>
+          </article>
+        </div>
       </section>
     </main>
   </body>
