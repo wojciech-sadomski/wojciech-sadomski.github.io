@@ -1,0 +1,20 @@
+.projects {
+  display: grid;
+
+  text-align: center;
+  &__descryption {
+  }
+  &__grid {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    background-color: grey;
+    width: 90%;
+    border-radius: 20px;
+    padding-top: 20px;
+  }
+  &__header {
+    color: red;
+  }
+}
