@@ -66,6 +66,20 @@ body {
   width: 100%;
   background-color: #1070ca;
   text-align: center;
+  &__header {
+  }
+  &__section {
+    &--emoji {
+      font-size: 30px;
+    }
+    &__section__header {
+      color: red;
+    }
+    &__list {
+      &--element {
+      }
+    }
+  }
 }
 .projects {
   display: grid;
@@ -79,5 +93,6 @@ body {
     background-color: grey;
     width: 90%;
     border-radius: 20px;
+    padding-top: 20px;
   }
 }
