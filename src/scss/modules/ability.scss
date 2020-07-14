@@ -1,19 +1,62 @@
 .ability {
-  height: 90%;
-  width: 100%;
-  background-color: #1070ca;
-  text-align: center;
+  background-color: $blue;
+  color: white;
+  padding: 64px 16px 68px;
+
   &__header {
-    color: red;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
   }
   &__section {
-    &--emoji {
-      font-size: 30px;
+    margin-top: 64px;
+    &__emoji {
+      display: block;
+      font-size: 72px;
+      text-align: center;
     }
-    &__section__header {
+    &__header {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 44px;
+      text-align: center;
+      margin: 16px 0 24px;
     }
-    &__list {
-      &--element {
+  }
+}
+.ability__list {
+  font-style: normal;
+  color: $textList;
+  width: 288px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  &__element {
+    padding: 0 0 0 24px;
+    margin: 0 0 16px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    &:before {
+      position: absolute;
+      left: 0px;
+      top: 7px;
+      display: block;
+      content: "";
+      width: 12px;
+      height: 9px;
+      background-image: url("../assets/icons/small-tick-green.svg");
+      .ability__list--white & {
+        background-image: url("../assets/icons/small-tick-white.svg");
+      }
+      .ability__list--dot & {
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        top: 19px;
+        left: 5px;
+        background-color: $textList;
       }
     }
   }

@@ -18,10 +18,10 @@
   }
   &__link {
     color: $blue;
-    font-weight: bold;
     text-decoration: none;
   }
   &__text {
+    font-weight: bold;
     text-align: center;
     font-size: 26px;
     line-height: 32px;
@@ -30,11 +30,12 @@
       color: $textBlue;
     }
     &--description {
-      font-weight: 300;
+      font-size: normal;
+      // font-weight: 400;
       text-align: center;
       font-size: 16px;
       line-height: 32px;
-      margin: 34px 0px 40px;
+      margin: 16px 0px 40px;
     }
     &--mail {
       font-size: 20px;
@@ -44,9 +45,9 @@
       color: white;
       background-color: $textBlue;
       border-radius: 64px;
-      text-align: center;
       padding: 4px 24px;
       text-decoration: none;
+      margin-bottom: 48px;
     }
   }
 }
