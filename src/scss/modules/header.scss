@@ -1,8 +1,30 @@
 .header {
   padding: 74px 16px 0;
   color: $textDark;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   &__cloud {
     display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      color: white;
+      background-color: $blue;
+      padding: 16px 19px;
+      font-size: 32px;
+      font-weight: bold;
+      border-radius: 16px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        background-image: url("../assets/icons/speech.svg");
+      }
+    }
   }
   &__foto {
     box-sizing: content-box;
@@ -10,15 +32,26 @@
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
+    @media (min-width: $desktop) {
+      width: 176px;
+      height: 176px;
+      border: 24px solid #f6f9fd;
+    }
   }
   &__foto--container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
   &__link {
     color: $blue;
     text-decoration: none;
+  }
+  &__speech {
+    position: absolute;
+    left: calc(50% + 90px);
+    top: -26px;
   }
   &__text {
     font-weight: bold;
@@ -26,6 +59,10 @@
     font-size: 26px;
     line-height: 32px;
     margin: 0 0 0 0;
+    @media (min-width: $desktop) {
+      font-size: 32px;
+      line-height: 40px;
+    }
     &--bold {
       color: $textBlue;
     }
@@ -36,6 +73,10 @@
       font-size: 16px;
       line-height: 32px;
       margin: 16px 0px 40px;
+      @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 40px;
+      }
     }
     &--mail {
       font-size: 20px;
