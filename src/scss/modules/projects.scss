@@ -1,11 +1,18 @@
 .projects {
   padding: 64px 16px 88px;
-  &__descryption {
+  &__description {
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 46px;
+    max-width: 786px;
+    margin: 0 auto 46px;
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      margin-bottom: 128px;
+    }
   }
   &__header {
     font-size: 36px;
@@ -42,6 +49,9 @@
     display: grid;
     grid-template-columns: 102px 1fr;
     column-gap: 8px;
+    @media (min-width: $desktop) {
+      grid-template-columns: 116px 1fr;
+    }
   }
   &__label {
     display: block;
@@ -70,6 +80,8 @@
   display: grid;
   column-gap: 24px;
   row-gap: 24px;
+  max-width: 1184px;
+  margin: 0 auto;
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
   }
