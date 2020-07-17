@@ -1,9 +1,12 @@
 .header {
-  padding: 74px 16px 0;
+  padding: 74px 16px 88px;
   color: $textDark;
   @media (min-width: $tablet) {
-    max-width: 768px;
+    max-width: 786px;
     margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    max-width: 100%;
   }
   &__cloud {
     display: none;
@@ -38,6 +41,31 @@
       border: 24px solid #f6f9fd;
     }
   }
+  &__container {
+    text-align: center;
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+      &::before,
+      &::after {
+        width: 83.23px;
+        height: 254.88px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+      &::before {
+        background: url(../assets/icons/cube-left.svg);
+        right: 100%;
+      }
+      &::after {
+        background: url(../assets/icons/cube-right.svg);
+        left: 100%;
+      }
+    }
+  }
   &__foto--container {
     display: flex;
     align-items: center;
@@ -65,7 +93,9 @@
     }
     &--bold {
       color: $textBlue;
+      white-space: nowrap;
     }
+
     &--description {
       font-size: normal;
       // font-weight: 400;
@@ -79,6 +109,7 @@
       }
     }
     &--mail {
+      text-align: center;
       font-size: 20px;
       font-weight: bold;
       line-height: 40px;
@@ -88,7 +119,6 @@
       border-radius: 64px;
       padding: 4px 24px;
       text-decoration: none;
-      margin-bottom: 48px;
     }
   }
 }
