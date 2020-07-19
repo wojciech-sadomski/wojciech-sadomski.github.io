@@ -34,11 +34,11 @@
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    border: 16px solid #f6f9fd;
+    border: 16px solid #e0e5ec;
     @media (min-width: $desktop) {
       width: 176px;
       height: 176px;
-      border: 24px solid #f6f9fd;
+      border: 24px solid #e0e5ec;
     }
   }
   &__container {
