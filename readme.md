@@ -1,6 +1,12 @@
-![Zdjęcie Wojciech Sadomski](git/)
+![Zdjęcie Wojciech Sadomski](https://wojciech-sadomski.github.io/readme.png)
 
 # Wojciech Sadomski
+
+## Narzędzia
+
+-WTF Webpack starterkit
+-HTML + CSS + JS
+-Github API
 
 ## Czego się dowiesz na stronie
 
