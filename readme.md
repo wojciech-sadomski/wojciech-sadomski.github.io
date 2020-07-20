@@ -4,9 +4,9 @@
 
 ## Narzędzia
 
--WTF Webpack starterkit
--HTML + CSS + JS
--Github API
+- WTF Webpack starterkit
+- HTML + CSS + JS
+- Github API
 
 ## Czego się dowiesz na stronie
 
