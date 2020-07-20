@@ -34,7 +34,8 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
           <p class="project__grid">
             <span class="project__label">Demo: </span>
             <span>
-              &lt;<a href="${homepage}" title=${name} class="project__link"
+              &lt;<a href="${homepage}" title=${name} class="project__link" target="_blank" alt="Wojciech Sadomski ${description}"
+              rel="noopener noreferrer"
                 >see more</a
               >&gt;
             </span>
@@ -44,6 +45,8 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
             <span>
               &lt;<a href="${html_url}"
               title=${name}
+              target="_blank" alt="Wojciech Sadomski ${description}"
+              rel="noopener noreferrer"
               class="project__link"
                 >surce code</a
               >&gt;
@@ -51,7 +54,9 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
           </p>
         </div>
       </article>`;
-      container.innerHTML += template;
+      if (description) {
+        container.innerHTML += template;
+      }
     }
   })
   .catch((e) => console.log(e));
