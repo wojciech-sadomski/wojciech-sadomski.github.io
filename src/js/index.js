@@ -12,7 +12,7 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
   .then((res) => res.json())
   .then((res) => {
     const container = document.querySelector(".projects-grid--js");
-    console.log(res);
+    // console.log(res);
     for (let repo of res) {
       const { description, homepage, html_url, name } = repo;
       const template = `<article class="project">
@@ -28,7 +28,7 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
             ><span>${name}</span>
           </h3>
           <p class="project__grid">
-            <span class="project__label">Descryption: </span
+            <span class="project__label">Description: </span
             ><span>${description}</span>
           </p>
           <p class="project__grid">
@@ -48,7 +48,7 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
               target="_blank" alt="Wojciech Sadomski ${description}"
               rel="noopener noreferrer"
               class="project__link"
-                >surce code</a
+                >source code</a
               >&gt;
             </span>
           </p>

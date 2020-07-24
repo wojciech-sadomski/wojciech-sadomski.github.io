@@ -1,11 +1,13 @@
 .header {
-  padding: 74px 16px 88px;
+  padding: 10px 16px 88px;
   color: $textDark;
   @media (min-width: $tablet) {
+    padding: 50px 16px 88px;
     max-width: 786px;
     margin: 0 auto;
   }
   @media (min-width: $desktop) {
+    padding: 50px 16px 88px;
     max-width: 100%;
   }
   &__cloud {
@@ -43,6 +45,7 @@
   }
   &__container {
     text-align: center;
+
     @media (min-width: $desktop) {
       max-width: 786px;
       margin: 0 auto;
