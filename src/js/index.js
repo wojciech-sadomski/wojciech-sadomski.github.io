@@ -12,7 +12,6 @@ fetch("https://api.github.com/users/wojciech-sadomski/repos")
   .then((res) => res.json())
   .then((res) => {
     const container = document.querySelector(".projects-grid--js");
-    // console.log(res);
     for (let repo of res) {
       const { description, homepage, html_url, name } = repo;
       const template = `<article class="project">
